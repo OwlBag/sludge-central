@@ -1,47 +1,77 @@
-﻿body {
-    padding: 0px;
-    margin: 0px;
-    background-color: #4F2345;
-    color: black;
+﻿* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-#page-title {
-    color: #9CD496;
-    text-align: center;
-    z-index: 10;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background-color: #994889;
-    margin: 0px;
-    padding: 0px;
-}
-
-#learn-more {
-    font-size: 15px;
-    color: blue;
-}
-
-.site-content {
-    padding: 20px;
-    color: black;
-    text-align left;
+body {
     background-color: #3A6F34;
-    position: fixed;
-    width: 100%;
-    top: 60px;
+    text-align: left;
     color: #9BD496;
     font-size: 20px;
 }
 
+/* HEADER STYLES START */
+header {
+    padding: 20px;
+    color: #9CD496;
+    z-index: 10;
+    position: static;
+    width: 100%;
+    height: 80px;
+    background-color: #994889;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header a:hover {
+    color: mediumpurple;
+}
+
+header nav {
+    float: right;
+    width: 30%;
+    text-align: center;
+    font-size: 25px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header nav a{
+    color: #9BD496;
+}
+/* HEADER STYLES END */
+/* SITE CONTENT STYLES START */
+
+.site-content {
+    top: 20px;
+    position: relative;
+    width: 100%;
+}
+
 .site-content h2 {
-    padding-left: 30px; 
+    padding-left: 10px;
+    color: #4F2345;
 }
 
-.site-content p, table {
-    padding-left: 50px;
+.site-content div {
+    padding: 20px 50px;
 }
-
+/* SITE CONTENT STYLES END */
+/* TABLE STYLES START */
 th {
     background-color: #994889;
 }
@@ -51,34 +81,23 @@ td, th {
     border: solid;
     border-width: 1px;
 }
+/*TABLE STYLES END */
 
-nav {
-    width: 20%;
-    text-align: center;
+.learn-more {
     font-size: 15px;
-    left: 40px;
-    padding: 0;
+    color: blue;
 }
 
-nav a{
-    color: #9BD496;
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: #994889;
 }
 
-nav a:hover {
-    color: mediumpurple;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav li {
-    padding: 10px;
-    border: solid;
-    border-width: 2px;
-    border-color: white
-}
-
-h2 {
-    color: #4F2345;
+footer p {
+    margin: 40px;
+    text-align: center;
 }
